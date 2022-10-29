@@ -7,4 +7,4 @@ Simple Webapp that detects handwritten digits that is drawn into the canvas.
 
 The model has been trained on the classic MNIST dataset for about 20 epochs, with minor data augmentations applied inorder to ensure random variations to the data fed into the model.
 
-* [Live Demo](https://acedev003.github.io/digit_recognizer/)
+* [Live Demo](https://arnold-anand.github.io/digit-recognizer/)

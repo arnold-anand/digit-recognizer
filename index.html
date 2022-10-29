@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Digit Recognizer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple webapp that detects handwritten digits.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bgimg">
+
+  <h3 class="w3-text-white heading">Digit Recognizer</h3>
+  <span class="w3-display-topright w3-text-white w3-xxlarge w3-animate-fading"><a href="https://github.com/Acedev003/digit_recognizer" target="_blank"><i class="fa fa-github w3-margin"></i></a></span>
+
+  <div class="container" id="main_container">
+    <div class="w3-row row">
+
+      <!-- Left (or top) container -->
+      <div class="w3-col w3-half col w3-center">
+        <div class="center">
+          <br>
+          <canvas width="200px" height="200px" id="canvas" class="canvas"></canvas>
+          <br><br>
+          <div>
+            <span class="w3-padding w3-button w3-grey w3-round-xlarge" id="guess_digit">Guess Digit</span>
+            <span class="w3-padding w3-button w3-grey w3-round-xlarge" id="clear_canvas">Clear Canvas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right (or Bottom) container -->
+      <div class="w3-col w3-half col">
+        <div class="center w3-center">
+          <div>
+            <p class="w3-xlarge w3-text-white">The AI says : <blockquote><q class="w3-large w3-text-white" id="quote"> Draw a digit in the box and click on the Guess button </q></blockquote></p>
+            <h2 class="w3-text-white" id="output"></h2>
+            <div class="w3-button w3-text-white" id="display_probs"> View all probabilities <i class="material-icons" style="vertical-align: middle;">navigate_next</i> </div>
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup modal -->
+  <div class="w3-modal modal" id="stat_modal">
+    <div class="w3-modal-content modal-content w3-center">
+      <div id="chart_div" class="chart_div"></div>
+      <div class="w3-center w3-text-white">
+        <p onclick="document.getElementById('stat_modal').style.display='none'" class="w3-button w3-right-align" > Close &times;</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/canvas.js"></script>
+  <script src="js/tfjs2.0.0.js"></script>
+  <script src="js/gcharts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

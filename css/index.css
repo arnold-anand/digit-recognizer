@@ -1,0 +1,90 @@
+body, html 
+{
+    height: 100%;
+    margin-top: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+.center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.bgimg 
+{
+  background-image: url('../assets/bg.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.heading
+{
+    height: 8%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.container
+{
+   height: 92%;
+}
+
+.row
+{
+    height: 100%;
+}
+
+.col
+{
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) 
+{
+    .col
+    {
+      height: 50%;
+      width: 100%;
+    }
+}
+
+.canvas
+{
+    border: 1px solid #ffffff;
+}
+
+
+@keyframes fadeIn 
+{
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+ .fadeIn 
+ {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+ }
+
+ .chart_div
+ {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+ .modal
+ {
+    background-color:#000000dd;
+ }
+
+ .modal-content
+ {
+    background-color: transparent;
+ }
